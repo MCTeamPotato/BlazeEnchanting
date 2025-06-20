@@ -1,0 +1,14 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "blazeenchanting"
+version = "${version}"
+displayName = "BlazeEnchanting"
+authors = "Kall"
+description = '''
+
+'''
+#logoFile = ""
