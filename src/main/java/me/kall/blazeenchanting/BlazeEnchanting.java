@@ -58,7 +58,7 @@ public final class BlazeEnchanting {
         }
         if (!compatible) return;
 
-        int currentLevel = EnchantmentHelper.getItemEnchantmentLevel(targetEnchant, output);
+        int currentLevel = output.getEnchantmentLevel(targetEnchant);
 
         if (currentLevel >= targetEnchant.getMaxLevel()) return;
 
