@@ -16,6 +16,7 @@ import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(BlazeEnchanting.MOD_ID)
@@ -78,7 +79,7 @@ public final class BlazeEnchanting {
 
         if (enchantmentsList.isEmpty()) return;
 
-        ResourceLocation targetId = enchantment.getRegistryName();
+        ResourceLocation targetId = ForgeRegistries.ENCHANTMENTS.getKey(enchantment);
         if (targetId == null) return;
         String target = targetId.toString();
 
